@@ -1,0 +1,80 @@
+body {
+  background-image: linear-gradient(rgb(201, 230, 201), rgb(70, 70, 51));
+  background-size: cover;
+  height: 100vh;
+}
+
+h1 {
+  margin-top: 12px;
+  font-size: 30px;
+  text-align: center;
+  font-weight: bolder;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.logo {
+  display: block;
+  margin: auto;
+  width: 80px;
+  height: 80px;
+  margin-bottom: 30px;
+}
+
+.container {
+  max-width: 955px;
+  height: 60vh;
+  border: 2px solid black;
+  margin: auto;
+  border-radius: 7px;
+  padding: 30px;
+  margin-bottom: 20px;
+  overflow-y: auto;
+}
+
+.message {
+  background-color: rgb(199, 192, 192);
+  width: 24%;
+  padding: 10px;
+  margin: 17px 15px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.left {
+  float: left;
+  clear: both;
+}
+.right {
+  float: right;
+  clear: both;
+}
+
+#send-container {
+  display: block;
+  margin: auto;
+  text-align: center;
+  max-width: 1030px;
+  width: 100%;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
+#messageInput {
+  width: 90%;
+  height: 39px;
+  border: 2px solid;
+  border-radius: 10px;
+  outline: none;
+  font-size: 20px;
+}
+
+.btn {
+  cursor: pointer;
+  border: 2px solid black;
+  border-radius: 6px;
+  height: 39px;
+  width: 9%;
+  outline: none;
+  margin: 6px;
+}
