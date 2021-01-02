@@ -6,6 +6,7 @@ const io = require("socket.io")(8000);
 const users = {};
 
 io.on("connection", (socket) => {
+  console.log("CONNECTED");
   socket.on("new-user-joined", (name) => {
     console.log("new user", name);
     users[socket.id] = name;

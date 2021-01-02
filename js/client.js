@@ -3,7 +3,7 @@ const form = document.getElementById("send-container");
 const messageInput = document.getElementById("messsageInput");
 const messageContainer = document.querySelector(".container");
 var audio = new Audio("ring.mp3");
-// const names = prompt("Enter your name to join the chat ");
+const names = prompt("Enter your name to join the chat ");
 
 socket.emit("new-user-joined", names);
 
