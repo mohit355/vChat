@@ -1,6 +1,6 @@
 const socket = io("http://localhost:8000");
 const form = document.getElementById("send-container");
-const messageInput = document.getElementById("messsageInput");
+const messageInput = document.getElementById("messageInput");
 const messageContainer = document.querySelector(".container");
 var audio = new Audio("ring.mp3");
 const names = prompt("Enter your name to join the chat ");
@@ -25,10 +25,10 @@ socket.on("user-joined", (data) => {
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   let message = "";
-  if (messageInput != null) {
+  if (messageInput != "") {
     message = messageInput.value;
   } else {
-    message = "chal bsdk";
+    alert("message box is empty");
   }
 
   append(`you: ${message}`, "right");
